@@ -1,0 +1,376 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    background: #262626;
+}
+.testimonials{
+    margin: 200px auto 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px, 1fr));
+    grid-gap: 20px;
+    padding-bottom: 20px;
+    top: 20px;
+}
+img{
+    width: 80px;
+    height: 80px;
+}
+.testimonials .card{
+    position: relative;
+    width: 350px;
+    margin: 0 auto;
+    background-color: #333;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0,0,0,.5);
+    overflow: hidden;
+}
+.testimonials .card .content
+{
+    z-index: 2;
+    position: relative;
+}
+h2{
+    color: #00b99a;
+}
+h2 span{
+    color: #03a9f4;
+}
+.testimonials .card .layer{
+    position: absolute;
+    top: calc(100% - 2px);
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#03a9f4, #e91ee3);
+    z-index: 1;
+    transition: .7s;
+}
+.testimonials .card:hover .layer{
+    top: 0;
+}
+.testimonials .card .content p{
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+}
+.testimonials .card .content .image{
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #fff;
+    box-shadow: 0 10px 20px rgba(0,0,0,.2);
+}
+.testimonials .card .content .details h2{
+    font-size: 18px;
+    color: #fff;
+}
+.testimonials .card .content .details h2 span{
+    color: #03a9f4;
+    font-size: 14px;
+    transition: .7s;
+}
+.testimonials .card:hover .content .details h2 span{
+    color: #fff;
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0px;
+    font-family: 'segoe ui';
+  }
+  
+  .nav {
+    height: 50px;
+    width: 100%;
+    position: relative;
+    justify-content: end;
+  }
+  .sample{
+    padding-right: auto;
+  }
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #efefef;
+  }
+  
+  .nav > .nav-links > a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+  
+  @media (max-width:600px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #333;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }
+  @media (max-width: 600px){
+    .sample{
+        padding-right: 40px;
+    }
+  }
+section{
+    height: 100vh;
+}
+.home{
+    background-image: url(https://static.vecteezy.com/system/resources/previews/000/549/810/original/vector-abstract-technology-background-technology-digital-world-of-business-information-futuristic-blue-virtual-graphic-interface.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.about{
+    background-image: url(https://images.pexels.com/photos/158826/structure-light-led-movement-158826.jpeg?cs=srgb&dl=pexels-pixabay-158826.jpg&fm=jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.gallery{
+    background-image: url(https://t4.ftcdn.net/jpg/02/86/02/67/360_F_286026740_xWkobcEk5g38qrH7cpfeImAnlUUSIrc5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h3{
+    color: white;
+}
+.activity{
+    background-image:url(https://e0.pxfuel.com/wallpapers/606/85/desktop-wallpaper-minimalist-and-background-2021-edition-best.jpg); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.cute{
+    background-size: cover;
+    background-position: center center;
+    height: 900px;
+    background-image: url(../picker/mainpic.jpg);
+    text-align: center;
+}
+.txt1{
+    position: relative;
+    top: 34%;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #00b99a;
+}
+.txt1 span{
+    color: #9b00e3;
+    padding: 4px;
+    margin: 5px;
+}
+.txt1 h1{
+    font-size: 4rem;
+}
+.txt1 h2{
+    font-size: 2.7rem;
+}
+.txt1 h4{
+    font-size: 1.8rem;
+}
+.txt1 p{
+    font-size: 1.4rem;
+}
+@media (max-width: 747px){
+    section{
+        height: auto;
+        padding: 10px;
+    }
+    
+}
+.carousel-inner {
+    width: 500px; /* Adjust the width as per your preference */
+    height: 500px; /* Adjust the height as per your preference */
+   transition: .2s;
+}
+@media (max-width: 600px){
+    .carousel-inner, .carousel-item img{
+        justify-content: center;
+    }
+}
+.carousel-inner:hover{
+    transform: scale(.8);
+}
+  
+.carousel-item img {
+    width: 500px;
+    height: 500px;
+}
+.container{
+    padding-top: 100px;
+    
+}
+.table{
+    border: 2px solid #232;
+    color: white;
+}
+.table span{
+    color: rgb(124, 255, 141);
+}
+.form{
+    border: 2px solid rgb(238, 255, 238);
+    color: rgb(140, 247, 255);
+}
+.images{
+  height: 200px;
+  width: 200px;
+  margin-left: 170px;
+  border-radius: 80px;
+  transition: .2s;
+}
+.images:hover{
+    transform: scale(1.2);
+}
+@media (max-width: 600px){
+    .images{
+        position: inherit;
+        margin-left: 90px;
+        margin-right: 90px;
+    }
+}
+.survey{
+    height: 200px;
+    width: 200px;
+    margin-left: 170px;
+    border-radius: 80px;
+    transition: .2s;
+}
+.survey:hover{
+    transform: scale(1.2);
+}
+body{
+    font-family: sans-serif;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    font-size: 45px;
+    height:  40px;
+}
+abbr{
+    text-decoration: none !important;
+}
+td{
+    height: 15px;
+    width: 50px; 
+   
+}
+table{
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    padding-top: 100px;
+    border: 0;
+    text-align: center;
+    
+}
+.periodic{
+    background-image: url(https://marketplace.canva.com/EAFGVXFY1ZI/2/0/1600w/canva-blue-background-aesthetic-decorative-leaves-oGwfHo4YdrE.jpg);
+    background-repeat: no-repeat;
+    background-size: cover  ;
+}
+.survey-form {
+    max-width: 600px;
+    margin-top: 10px;
+    border: 2px solid #060606;
+    padding: 20px;
+    border-radius: 5px;
+  }
+.rating {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+ }
+.rating input[type="radio"] {
+    display: none;
+}
+.rating label {
+    font-size: 40px;
+    color: #bbb;
+    cursor: pointer;
+}
+  .rating label:hover,
+  .rating label:hover ~ label,
+  .rating input[type="radio"]:checked ~ label {
+    color: #fcd303;
+}
+.border{
+    display: flex;
+    flex-direction: column;
+}
